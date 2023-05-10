@@ -1,0 +1,140 @@
+.nav {
+    height: 100px;
+    width: 100%;
+    background-color: #ffffff;
+    position: fixed;
+    z-index: 1;
+    margin: 0;
+    padding-right: 40px;
+    /*opacity: .5;*/  
+  }
+  
+  .nav-logo-desktop {
+    padding-top: 7px;
+    height: 70px;
+  }
+  
+  .nav>.nav-header {
+    display: inline;
+  }
+  
+  .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #183883;
+    padding: 10px 10px 10px 5%;
+  }
+  
+  .nav>.nav-btn {
+    display: none;
+  }
+  
+  .nav>.nav-links {
+    display: inline;
+    float: right;
+    align-items: center;
+    font-size: 18px;
+    font-weight: semibold;
+  }
+  
+  .nav>.nav-links>a {
+    display: inline-block;
+    padding: 35px 25px 35px 25px;
+    text-decoration: none;
+    color: #183883;
+    font-weight: 600;
+  }
+  
+  .nav>.nav-links>a:hover {
+    color: #898dcf;
+  }
+  
+  .nav>#nav-check {
+    display: none;
+  }
+
+  .nav-logo-mobileview{
+    display:none;
+  }
+
+  @media (max-width:1200px) {
+    .nav{
+      height:100px;
+    }
+
+    .nav>.nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 20px;
+      top: 20px;
+    }
+  
+    .nav>.nav-btn>label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+  
+    .nav>.nav-btn>label:hover,
+    .nav #nav-check:checked~.nav-btn>label {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+  
+    .nav>.nav-btn>label>span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #183883;
+    }
+  
+    .nav>.nav-links {
+      position: absolute;
+      display: block;
+      width: 70%;
+      max-height: 280px;
+      background-color: rgba(24, 56, 131, 0.9);
+      transition: all 0.3s ease-in;
+      overflow: hidden;
+      top:80px;
+      right: 0px;
+      border-radius: 10px;
+      padding: 0 0 0 0 ;
+    }
+  
+    .nav>.nav-links>a {
+      display: block;
+      width: 100%;
+      color:black;
+      padding: 20px 0 20px 30px;
+    }
+  
+    .nav>.nav-links>a:hover {
+      color:#009743;
+    }
+    
+    .nav>#nav-check:not(:checked)~.nav-links {
+      height: 0px;
+    }
+  
+    .nav>#nav-check:checked~.nav-links {
+      height: calc(70vh - 5px);
+      overflow-y: auto;
+    }
+
+    .nav-title{
+      padding: 15px 20px;
+    }
+  }
+
+  @media (max-width:500px){
+    .nav-logo-desktop{
+      display: none;
+    }
+
+    .nav-logo-mobileview{
+      display: block;
+      height: 50px;
+      margin: 10px 0;
+    }
+  }
