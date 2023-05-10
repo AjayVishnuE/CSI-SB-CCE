@@ -12,7 +12,7 @@ const Footer = () => {
       <div className='footer'>
         <div className="footer-left">
           <img className="footer-left-img" src={logodesk}/>
-          <div style={{display: "flex", padding:"10px 0"}}>
+          <div style={{display: "flex", padding:"0"}}>
             <a href="./Privacy Policy.html" style={{display:"inline-block", color: "#183883" , FontWeight: "semibold", fontSize:"medium" }}>Privacy Policy </a>
             <p style={{display: 'inline-block'}}>|</p>
             <a href="./Disclaimer.html" style={{display:'inline-block', textdecoration:'none', color: '#183883', fontWeight: '400', fontSize: 'medium'}}>Disclaimer</a>
@@ -36,7 +36,7 @@ const Footer = () => {
           <a style={{color: '#183883', fontWeight:"semibold", fontSize:"large"}} href="cce.edu.in">cce.edu.in</a>
         </div>
       </div>
-      <p style={{textAlign:"center", padding:"20px"}}>Copyright © CSI CCE 2023. All Rights Reserved</p>
+      <p style={{textAlign:"center", padding:"15px", fontSize:"small"}}>Copyright © CSI CCE 2023. All Rights Reserved</p>
     </div>
   )
 }

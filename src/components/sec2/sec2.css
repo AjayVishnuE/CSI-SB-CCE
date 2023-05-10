@@ -1,0 +1,50 @@
+.our-journey{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    padding: 0 10% 100px 10%;
+  }
+
+  .our-journey-img{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .our-journey-description{
+    width:45%;
+  }
+
+  .supporting-organizations{
+    background-color: #F4F4F4;
+    padding: 40px 10%;
+  }
+
+  .supporting-organizations-logos{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 20px 0;
+  }
+
+  .supporting-organizations-logos > img{
+    height: 120px;
+    width: 120px;
+    object-fit: contain;
+  }
+
+@media (max-width:1200px) {
+    .our-journey{
+      padding: 0 0 50px 0;
+    }
+
+    .our-journey-img{
+      width: 80%;
+    }
+
+    .our-journey-description{
+      width: 80%;
+    }
+  }

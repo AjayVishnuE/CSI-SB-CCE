@@ -1,0 +1,77 @@
+.events{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+    flex-wrap: wrap;
+    padding: 50px 10% 25px 10% ;
+  } 
+
+  .events-div{
+    min-width: 350px;
+    width:31%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    overflow: hidden;
+  }
+
+  .events-div > img{
+    width: 350px;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .event-btn-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding:25px 0 40px 0;
+  }
+
+  .event-btn{
+    background-color: #183883;
+    color: white;
+    width: 300px;
+    height: 50px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .reach-us{
+    background-color: lightgray;
+    padding: 50px 0px 30px 0px;
+  }
+
+  .reach-us-inside{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      padding: 25px 0;
+  }
+
+  .reach-us-left{
+    text-align: right;
+  }
+
+  .reach-us-right{
+    text-align: left;
+  }
+
+  @media (max-width:900px){
+
+    .events{
+      width: 100%;
+      padding: 0 10% 0 10%;
+    }
+
+    .events-div{
+      width: 80%;
+    }
+  }
