@@ -65,6 +65,13 @@
       height: 400px;
       width:640px;
   }
+  
+  @media (max-width:1200px) {    
+    .beachhack-paragraphs{
+      display: flex;
+      flex-direction: column;
+    }
+  }
 
   @media (max-width:900px){
     .beachhack-title{
