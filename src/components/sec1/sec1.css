@@ -1,0 +1,51 @@
+h1 {
+    color:#183883;
+    margin: 10px 0;
+    font-weight: 500;
+  }
+
+  p{
+    margin:0;
+  }
+
+  .spotlight{
+    width:100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .spotlight-img{
+    width:100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+  
+  .about-csi{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10% 100px 10%;
+    gap: 10%;
+
+  }
+
+  .about-csi-content{
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    align-items: center;
+    width: 300px;
+    padding: 20px 0;
+  }
+
+  @media (max-width:900px){
+
+
+    .about-csi{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+}

@@ -1,10 +1,14 @@
 import React from 'react'
 import './home.css';
+import { Sec1, Sec2, Sec3, Sec4 } from '../../components' ;
 
 const Home = () => {
   return (
     <div>
-      Home
+      <Sec1/>
+      <Sec2/>
+      <Sec3/>
+      <Sec4/>
     </div>
   )
 }
