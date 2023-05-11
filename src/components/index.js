@@ -8,5 +8,7 @@ export { default as Sec2 } from './sec2/Sec2';
 export { default as Sec3 } from './sec3/Sec3';
 export { default as Sec4 } from './sec4/Sec4';
 export { default as Upcomingevents } from './upcomingevents/Upcomingevents';
+export { default as Events } from './events/Events';
+
 
 

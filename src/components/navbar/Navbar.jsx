@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
+
+import {UpcomingEvents, OurTeam, GalleryPage , HistoryPage } from '../../containers' ;
+
 import logodesk from '../../assets/CSI-CCE Logo Desktop.svg';
 import logomv from '../../assets/CSI-CCE Logo mobileview.svg';
 import './navbar.css';
@@ -24,10 +27,10 @@ const Navbar = () => {
           </label>
         </div>
         <div className="nav-links">
-            <a href="./Upcoming Events.html">UPCOMING EVENTS</a>
-            <a href="./Our Team.html">OUR TEAM</a>
-            <a href="./Gallery.html">GALLERY</a>
-            <a href="./History.html">HISTORY</a>
+            <a href={<UpcomingEvents/>}>UPCOMING EVENTS</a>
+            <a href={<OurTeam/>}>OUR TEAM</a>
+            <a href={<GalleryPage/>}>GALLERY</a>
+            <a href={<HistoryPage/>}>HISTORY</a>
         </div>
     </div>
   );
