@@ -1,22 +1,23 @@
-import React, { useState } from 'react';
-import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
+import React from 'react';
 
-import {UpcomingEvents, OurTeam, GalleryPage , HistoryPage } from '../../containers' ;
+import { Link } from "react-router-dom";
+
+import { Home } from '../../containers';
 
 import logodesk from '../../assets/CSI-CCE Logo Desktop.svg';
 import logomv from '../../assets/CSI-CCE Logo mobileview.svg';
 import './navbar.css';
 
-const Navbar = () => {
+function Navbar () {
   return (
     <div className="nav">
         <input type="checkbox" id="nav-check"/>
         <div className="nav-header">
           <div className="nav-title">
-            <a href="./index.html">
+            <Link to="/">
               <img className="nav-logo-desktop" src={logodesk}/>
               <img className="nav-logo-mobileview" src={logomv}/>
-            </a>
+            </Link>
           </div>
         </div>
         <div className="nav-btn">
@@ -27,13 +28,14 @@ const Navbar = () => {
           </label>
         </div>
         <div className="nav-links">
-            <a href={<UpcomingEvents/>}>UPCOMING EVENTS</a>
-            <a href={<OurTeam/>}>OUR TEAM</a>
-            <a href={<GalleryPage/>}>GALLERY</a>
-            <a href={<HistoryPage/>}>HISTORY</a>
+            <Link to="/UpcomingEvents">UPCOMING EVENTS</Link>
+            <Link to="/OurTeam">Our Team</Link>
+            <Link to="/GalleryPage">Gallery</Link>
+            <Link to="/HistoryPage">History</Link>
         </div>
-    </div>
+      </div>
   );
-};
+}
 
 export default Navbar;
+

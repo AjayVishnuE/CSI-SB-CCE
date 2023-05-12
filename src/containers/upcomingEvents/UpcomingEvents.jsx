@@ -3,7 +3,7 @@ import './upcomingEvents.css';
 
 import { Navbar,Upcomingevents,Footer } from '../../components';
 
-const UpcomingEvents = () => {
+function UpcomingEvents () {
   return (
     <div>
       <Navbar/>
@@ -13,4 +13,4 @@ const UpcomingEvents = () => {
   )
 }
 
-export default UpcomingEvents
+export default UpcomingEvents;

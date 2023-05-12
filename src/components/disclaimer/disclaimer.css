@@ -1,0 +1,19 @@
+.disclaimer{
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    padding: 100px 10% 50px 10%;
+    font-size: large;
+    min-height: 85vh;
+}
+
+.disclaimer > h1{
+    margin: 8px 0px;
+}
+
+.disclaimer > h2{
+    font-weight: 600;
+    color:#183883;
+}

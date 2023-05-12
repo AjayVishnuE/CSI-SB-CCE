@@ -23,13 +23,13 @@ const Footer = () => {
         </div>
         <div className="footer-right">
           <div className="footer-right-imgs">
-            <a href="">
+            <a href="https://www.instagram.com/csi_cce/" target="_blank">
               <img src={instagram} alt=""/> 
             </a>
-            <a href="">
+            <a href="https://www.linkedin.com/in/csicce/" target="_blank">
               <img src={linkedin} alt=""/>
             </a>
-            <a href="">
+            <a href="" target="_blank">
               <img src={facebook} alt=""/>
             </a>
           </div>

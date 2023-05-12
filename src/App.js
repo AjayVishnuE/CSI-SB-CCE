@@ -1,17 +1,28 @@
 import React from 'react';
-import { ReactDOM } from 'react-dom';
+import { BrowserRouter, 
+  Routes, 
+  Route, 
+ } from "react-router-dom";
 
-
-import { Home } from './containers';
+import { EventsPage, GalleryPage, HistoryPage, Home, OurTeam, UpcomingEvents } from './containers';
+import { Navbar } from './components';
 
 import './App.css';
 
 const App = () => {
   return (
-    <div className='App'>
-      <Home />
-    </div>
-  )
+    <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home/>} />
+            <Route path="/UpcomingEvents" element={<UpcomingEvents />} />
+            <Route path="/OurTeam" element={<OurTeam />} />
+            <Route path="/GalleryPage" element={<GalleryPage />} />
+            <Route path="/HistoryPage" element={<HistoryPage />} />
+            <Route path="/EventsPage" element={<EventsPage />} />
+          </Routes>
+    </BrowserRouter>
+
+  );
 }
 
-export default App
+export default App;
