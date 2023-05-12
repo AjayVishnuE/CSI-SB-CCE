@@ -1,8 +1,9 @@
 import React from 'react'
 import './sec4.css';
-import Event1 from '../../assets/Event1.jpg';
-import Event2 from '../../assets/Event2.jpg';
-import Event3 from '../../assets/Event1.jpg';
+import Event1 from '../../assets/Events/Event1.png';
+import Event2 from '../../assets/Events/Event2.png';
+import Event3 from '../../assets/Events/Event3.png';
+import { Link } from 'react-router-dom';
 
 
 const Sec4 = () => {
@@ -30,11 +31,11 @@ const Sec4 = () => {
         </div>
       </div>
       <div className="event-btn-container">
-        <a style={{textDecoration: "none"}} href="./Events.html">
+        <Link to="/EventsPage">
           <div className="event-btn">
             <p>View more events from us</p>        
           </div>
-        </a>
+        </Link>
       </div>
       <div className="reach-us">
         <h1 style={{textAlign: "center", margin: 0}}>Reach Us</h1>
