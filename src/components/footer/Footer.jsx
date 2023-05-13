@@ -4,6 +4,7 @@ import logodesk from '../../assets/CSI-CCE Logo Desktop.svg';
 import instagram from '../../assets/logo-instagram.svg';
 import linkedin from '../../assets/logo-linkedin.svg';
 import facebook from '../../assets/logo-facebook.svg';
+import { Link } from 'react-router-dom';
 
 
 const Footer = () => {
@@ -13,7 +14,7 @@ const Footer = () => {
         <div className="footer-left">
           <img className="footer-left-img" src={logodesk}/>
           <div style={{display: "flex", padding:"0"}}>
-            <a href="./Privacy Policy.html" style={{display:"inline-block", color: "#183883" , FontWeight: "semibold", fontSize:"medium" }}>Privacy Policy </a>
+            <Link to="" style={{display:"inline-block", color: "#183883" , FontWeight: "semibold", fontSize:"medium" }}>Privacy Policy </Link>
             <p style={{display: 'inline-block'}}>|</p>
             <a href="./Disclaimer.html" style={{display:'inline-block', textdecoration:'none', color: '#183883', fontWeight: '400', fontSize: 'medium'}}>Disclaimer</a>
           </div>

@@ -31,6 +31,10 @@
     padding: 50px 10%;
   }
 
+  .beachhack-paragraphs > P {
+    width: 50%;
+  }
+
   @-webkit-keyframes scroll {
     0% {
       transform: translateX(0);
