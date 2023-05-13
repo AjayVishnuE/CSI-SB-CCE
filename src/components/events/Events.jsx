@@ -25,7 +25,7 @@ const Events = () => {
             <div class="events-div">
                 <img src={Event2} alt="event-img"/>
                 <h1 style={{fontSize: 20, fontWeight: 600, margin: 0}}>Student Master Program  </h1>
-                <p style={{ textAlign: "justify", paddingRight: 20, height: "fit-content", overflow: "hidden", fontSize:"medium", width: 300}}>one day offline workshop on web development.</p>
+                <p style={{ textAlign: "justify", paddingRight: 20, height: "fit-content", overflow: "hidden", fontSize:"medium", width: 300}}>One day offline workshop on web development.</p>
                 <a style={{textAlign: "left", textDecoration: "none", color: "#183883", fontWeight: 500}} href="./event2.html">Read More</a>
             </div>
             <div class="events-div">
