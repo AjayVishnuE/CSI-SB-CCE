@@ -1,7 +1,7 @@
-import React from 'react'
+import React , {useState} from 'react'
 import './events.css';
+import Eventdetails from '../eventdetails/Eventdetails';
 import { Link } from 'react-router-dom';
-
 import Event1 from '../../assets/Events/Event1.png';
 import Event2 from '../../assets/Events/Event2.png';
 import Event3 from '../../assets/Events/Event3.png';
@@ -13,6 +13,37 @@ import Event8 from '../../assets/Events/Event8.png';
 import Event9 from '../../assets/Events/Event9.png';
 
 const Events = () => {
+    const [selectedContent, setSelectedContent] = useState(null);
+
+    // Function to handle content selection
+    const handleContentSelect = (content) => {
+        setSelectedContent(content);
+    };
+
+    const Datasets = [
+        {
+          title: '_Boot Up',
+          img: {Event1},
+          text: 'From they fineReally boy law county she unable her sister. Feet you off its like like six. Considered sympathize ten uncommonly occasional assistance sufficient not. Letter of on become he tended active enable toAmong sex are leave law built now. In built table in an rapid blush.. john he give of rich he. They age and draw mrs like. Improving end distrusts may instantly was household applauded.Considered sympathize ten uncommonly occasional assistance sufficient not. Letter of on become he tended active enable to.',
+        },
+        {
+          title: '_Student Master Program',
+          img: {Event2},
+          text: 'From they fineReally boy law county she unable her sister. Feet you off its like like six. Considered sympathize ten uncommonly occasional assistance sufficient not. Letter of on become he tended active enable toAmong sex are leave law built now. In built table in an rapid blush.. john he give of rich he. They age and draw mrs like. Improving end distrusts may instantly was household applauded.Considered sympathize ten uncommonly occasional assistance sufficient not. Letter of on become he tended active enable to.',
+        },
+        {
+          title: 'Game Development',
+          img: {Event3},
+          text: 'From they fineReally boy law county she unable her sister. Feet you off its like like six. Considered sympathize ten uncommonly occasional assistance sufficient not. Letter of on become he tended active enable toAmong sex are leave law built now. In built table in an rapid blush.. john he give of rich he. They age and draw mrs like. Improving end distrusts may instantly was household applauded.Considered sympathize ten uncommonly occasional assistance sufficient not. Letter of on become he tended active enable to.',
+        },
+        {
+          title: 'Django Workshop',
+          img: {Event4},
+          text: 'From they fineReally boy law county she unable her sister. Feet you off its like like six. Considered sympathize ten uncommonly occasional assistance sufficient not. Letter of on become he tended active enable toAmong sex are leave law built now. In built table in an rapid blush.. john he give of rich he. They age and draw mrs like. Improving end distrusts may instantly was household applauded.Considered sympathize ten uncommonly occasional assistance sufficient not. Letter of on become he tended active enable to.',
+        }
+      ];
+      
+
   return (
     <div class="events-container">
         <h2>Events by CSI CCE</h2>
@@ -21,7 +52,7 @@ const Events = () => {
                 <img src={Event1} alt="event-img"/>
                 <h1 style={{textAlign: "left",fontSize: 20, fontWeight: 600, margin: 0, width:300}}>_bootUp </h1>
                 <p style={{ textAlign: "left", height: "fit-content", overflow: "hidden", fontSize:"medium", width: 300}}> An offline overnight bootcamp on web development.</p>
-                <Link style={{textAlign: "left", textDecoration: "none", color: "#183883", fontWeight: 500, width:300}} to="/Eventdetails">Read More</Link>
+                <Link to="/Eventdetails"><Eventdetails dataset={selectedContent} /><button onClick={() => handleContentSelect(Datasets[0])} style={{textAlign: "left", textDecoration: "none", color: "#183883", fontWeight: 500, width:300}}>Read More</button></Link>
             </div>
             <div class="events-div">
                 <img src={Event2} alt="event-img"/>
@@ -73,7 +104,7 @@ const Events = () => {
             </div>
         </div>
     </div>
-  )
-}
+  );
+};
 
-export default Events
+export default Events;

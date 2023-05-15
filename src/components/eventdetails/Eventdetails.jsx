@@ -1,14 +1,14 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './eventdetails.css';
 import { Link } from 'react-router-dom';
 
-function Eventdetails (title,img,eventdetails) {
+const Eventdetails = ({ dataset }) => {
   return (
     <div>
       <div className="Eventdetails">
-        <h1>_bootup</h1>
-        <img src={img} alt="event-img"/>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, mollitia. Ea, repellendus amet. Consequuntur, est veniam labore asperiores adipisci magni maiores similique culpa possimus, explicabo saepe corporis illo id iure?</p>
+        <h1>{dataset.title}</h1>
+        <img src={dataset.img} alt="event-img"/>
+        <p>{dataset.text}</p>
         <br/>
         <h2>other events</h2>
 
