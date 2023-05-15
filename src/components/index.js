@@ -11,6 +11,7 @@ export { default as Upcomingevents } from './upcomingevents/Upcomingevents';
 export { default as Events } from './events/Events';
 export { default as PrivacyPolicy} from './privacypolicy/PrivacyPolicy';
 export { default as Disclaimer } from './disclaimer/Disclaimer';
+export { default as Eventdetails } from './eventdetails/Eventdetails';
 
 
 
