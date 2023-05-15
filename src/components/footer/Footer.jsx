@@ -14,9 +14,9 @@ const Footer = () => {
         <div className="footer-left">
           <img className="footer-left-img" src={logodesk}/>
           <div style={{display: "flex", padding:"0"}}>
-            <Link to="" style={{display:"inline-block", color: "#183883" , FontWeight: "semibold", fontSize:"medium" }}>Privacy Policy </Link>
+            <Link to="/PrivacyPolicy" style={{display:"inline-block", color: "#183883" , FontWeight: "semibold", fontSize:"medium" }}>Privacy Policy </Link>
             <p style={{display: 'inline-block'}}>|</p>
-            <a href="./Disclaimer.html" style={{display:'inline-block', textdecoration:'none', color: '#183883', fontWeight: '400', fontSize: 'medium'}}>Disclaimer</a>
+            <Link to="/Disclaimer" style={{display:'inline-block', textdecoration:'none', color: '#183883', fontWeight: '400', fontSize: 'medium'}}>Disclaimer</Link>
           </div>
         </div>
         <div className="footer-center">

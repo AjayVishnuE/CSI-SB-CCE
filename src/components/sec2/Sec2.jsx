@@ -1,6 +1,6 @@
 import React from 'react'
 import './sec2.css';
-import ourjourney from '../../assets/Our-journey.svg';
+import ourjourney from '../../assets/ourjourney.JPG';
 import CCE from '../../assets/CCE-logo.svg';
 import CODe from '../../assets/CODe-logo.svg';
 

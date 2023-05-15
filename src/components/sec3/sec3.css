@@ -51,7 +51,7 @@
 
   .beachhack-slider {
     background: white;
-    height: 300px;
+    height: 350px;
     margin: auto;
     overflow: hidden;
     position: relative;
@@ -66,8 +66,9 @@
   }
   
   .beachhack-slider-imgs{
-      height: 400px;
-      width:640px;
+      height: 350px;
+      width:580px;
+      object-fit: cover ;
   }
   
   @media (max-width:1200px) {    

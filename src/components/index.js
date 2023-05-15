@@ -9,7 +9,7 @@ export { default as Sec3 } from './sec3/Sec3';
 export { default as Sec4 } from './sec4/Sec4';
 export { default as Upcomingevents } from './upcomingevents/Upcomingevents';
 export { default as Events } from './events/Events';
-export { default as PrivacyPolicy} from './privacypolicy1/PrivacyPolicy';
+export { default as PrivacyPolicy} from './privacypolicy/PrivacyPolicy';
 export { default as Disclaimer } from './disclaimer/Disclaimer';
 
 

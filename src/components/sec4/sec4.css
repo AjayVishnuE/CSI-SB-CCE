@@ -1,10 +1,10 @@
 .events{
     width: 100%;
+    flex:content;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 3%;
     flex-wrap: wrap;
     padding: 50px 10% 25px 10% ;
   } 
