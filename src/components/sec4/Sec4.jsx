@@ -14,24 +14,24 @@ const Sec4 = () => {
         <div className="events-div">
           <img src={Event1} alt="event1-img"/>
           <h1 style={{fontSize: "20px", fontWeight: 600, margin: 0}}>_bootUp </h1>
-          <p style={{textAlign: "justify", paddingRight: "20px", height: "50px", overflow: "hidden"}}>An offline overnight bootcamp on web development.</p>
-          <a style={{textAlign: "left", textDecoration: "none", color: "#183883", fontWeight: 500}} href="./event1.html">Read More</a>
+          <p style={{textAlign: "justify", height: "50px", overflow: "hidden"}}>An offline overnight bootcamp on web development.</p>
+          <a style={{textAlign: "left", textDecoration: "none", color: "#183883", fontWeight: 500, width:300}} href="./event1.html">Read More</a>
         </div>
         <div className="events-div">
           <img src={Event2} alt="event2-img"/>
           <h1 style={{fontSize: "20px", fontWeight: 600, margin: 0}}>Student Master Program</h1>
-          <p style={{textAlign: "justify", paddingRight: "20px", height: "50px", overflow: "hidden"}}>One day offline workshop on web development.</p>
-          <a style={{textAlign: "left", textDecoration: "none", color: "#183883", fontWeight: 500}} href="./event2.html">Read More</a>
+          <p style={{textAlign: "justify", height: "50px", overflow: "hidden"}}>One day offline workshop on web development.</p>
+          <a style={{textAlign: "left", textDecoration: "none", color: "#183883", fontWeight: 500, width:300}} href="./event2.html">Read More</a>
         </div>
         <div className="events-div">
           <img src={Event3} alt="event3-img"/>
           <h1 style={{fontSize: "20px", fontWeight: 600, margin: 0}}>Game Development</h1>
-          <p style={{textAlign: "justify", paddingRight: "20px", height: "50px", overflow: "hidden"}}>One day game development workshop in Unity.</p>
-          <a style={{textAlign: "left", textDecoration: "none", color: "#183883", fontWeight: 500}} href="./event3.html">Read More</a>
+          <p style={{textAlign: "justify", height: "50px", overflow: "hidden"}}>One day game development workshop in Unity.</p>
+          <a style={{textAlign: "left", textDecoration: "none", color: "#183883", fontWeight: 500, width:300}} href="./event3.html">Read More</a>
         </div>
       </div>
       <div className="event-btn-container">
-        <Link to="/EventsPage">
+        <Link to="/Events">
           <div className="event-btn">
             <p>View more events from us</p>        
           </div>

@@ -10,17 +10,17 @@
   } 
 
   .events-div{
-    min-width: 350px;
-    width:31%;
+    width: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 5px;
     overflow: hidden;
   }
 
   .events-div > img{
-    width: 350px;
+    width: 300px;
     height: 300px;
     object-fit: cover;
   }

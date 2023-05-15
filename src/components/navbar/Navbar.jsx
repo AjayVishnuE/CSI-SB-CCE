@@ -28,10 +28,10 @@ function Navbar () {
           </label>
         </div>
         <div className="nav-links">
-            <Link to="/UpcomingEvents">UPCOMING EVENTS</Link>
-            <Link to="/OurTeam">Our Team</Link>
-            <Link to="/GalleryPage">Gallery</Link>
-            <Link to="/HistoryPage">History</Link>
+            <Link to="/Upcomingevents">UPCOMING EVENTS</Link>
+            <Link to="/Ourteam">Our Team</Link>
+            <Link to="/Gallery">Gallery</Link>
+            <Link to="/History">History</Link>
         </div>
       </div>
   );

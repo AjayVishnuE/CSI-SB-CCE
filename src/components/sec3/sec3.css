@@ -97,4 +97,8 @@
       line-height: 1;  
       margin: 0;
     }
+
+    .beachhack-paragraphs > P {
+      width: 100%;
+    }
 }

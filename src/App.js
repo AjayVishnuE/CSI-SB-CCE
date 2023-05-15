@@ -7,8 +7,8 @@ import { BrowserRouter,
  import {useEffect} from 'react';
 
 
-import { EventsPage, GalleryPage, HistoryPage, Home, OurTeam, UpcomingEvents } from './containers';
-import { Navbar } from './components';
+import {Home } from './containers';
+import { Footer, Navbar, Upcomingevents, Ourteam , Gallery, History, Events , PrivacyPolicy, Disclaimer, } from './components';
 
 import './App.css';
 
@@ -21,12 +21,16 @@ const App = () => {
     <Navbar/>
           <Routes>
             <Route path="/" element={<Home/>} />
-            <Route path="/UpcomingEvents" element={<UpcomingEvents />} />
-            <Route path="/OurTeam" element={<OurTeam />} />
-            <Route path="/GalleryPage" element={<GalleryPage />} />
-            <Route path="/HistoryPage" element={<HistoryPage />} />
-            <Route path="/EventsPage" element={<EventsPage />} />
+            <Route path="/Upcomingevents" element={<Upcomingevents />} />
+            <Route path="/Ourteam" element={<Ourteam />} />
+            <Route path="/Gallery" element={<Gallery />} />
+            <Route path="/History" element={<History />} />
+            <Route path="/Events" element={<Events />} />
+            <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
+            <Route path="/Disclaimer" element={<Disclaimer />} />
+
           </Routes>
+    <Footer/>
     </BrowserRouter>
 
   );
