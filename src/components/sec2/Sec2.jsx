@@ -21,8 +21,12 @@ const Sec2 = () => {
       <div className="supporting-organizations">
         <h1 style={{textAlign: "center"}}>Supporting Organizations</h1>
         <div className="supporting-organizations-logos">
-          <img src={CCE} alt=""/>
-          <img src={CODe} alt=""/>
+          <a href="https://cce.edu.in" target='_blank'>
+            <img src={CCE} alt=""/>
+          </a>
+          <a href="https://code.cce.edu.in" target='_blank'>
+            <img src={CODe} alt=""/>
+          </a>
         </div>
       </div>
     </div>

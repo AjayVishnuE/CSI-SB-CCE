@@ -28,7 +28,7 @@
     padding: 20px 0;
   }
 
-  .supporting-organizations-logos > img{
+  .supporting-organizations-logos > a > img{
     height: 120px;
     width: 120px;
     object-fit: contain;
