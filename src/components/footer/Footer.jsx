@@ -37,7 +37,7 @@ const Footer = () => {
           <a style={{color: '#183883', fontWeight:"semibold", fontSize:"large"}} href="cce.edu.in">cce.edu.in</a>
         </div>
       </div>
-      <p style={{textAlign:"center", padding:"15px", fontSize:"small"}}>Copyright © CSI CCE 2023. All Rights Reserved</p>
+      <p style={{textAlign:"center", padding:"5px", fontSize:"small"}}>Copyright © CSI CCE 2023. All Rights Reserved</p>
     </div>
   )
 }

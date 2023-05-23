@@ -1,34 +1,60 @@
-import React from 'react'
+import React , {useState} from 'react'
+import { useNavigate } from 'react-router-dom';
 import './sec4.css';
 import Event1 from '../../assets/Events/Event1.png';
 import Event2 from '../../assets/Events/Event2.png';
 import Event3 from '../../assets/Events/Event3.png';
 import { Link } from 'react-router-dom';
-
+const Datasets = [
+  {
+    title: '_Boot Up',
+    img: Event1,
+    Description:'An offline overnight bootcamp on web development.',
+    text: 'From they fineReally boy law county she unable her sister. Feet you off its like like six. Considered sympathize ten uncommonly occasional assistance sufficient not. Letter of on become he tended active enable toAmong sex are leave law built now. In built table in an rapid blush.. john he give of rich he. They age and draw mrs like. Improving end distrusts may instantly was household applauded.Considered sympathize ten uncommonly occasional assistance sufficient not. Letter of on become he tended active enable to.',
+  },
+  {
+    title: 'Student Master Program',
+    img: Event2,
+    Description:'One day offline workshop on web development.',
+    text: 'From they fineReally boy law county she unable her sister. Feet you off its like like six. Considered sympathize ten uncommonly occasional assistance sufficient not. Letter of on become he tended active enable toAmong sex are leave law built now. In built table in an rapid blush.. john he give of rich he. They age and draw mrs like. Improving end distrusts may instantly was household applauded.Considered sympathize ten uncommonly occasional assistance sufficient not. Letter of on become he tended active enable to.',
+  },
+  {
+    title: 'Game Development',
+    img: Event3,
+    Description:'One day game development workshop in Unity.',
+    text: 'From they fineReally boy law county she unable her sister. Feet you off its like like six. Considered sympathize ten uncommonly occasional assistance sufficient not. Letter of on become he tended active enable toAmong sex are leave law built now. In built table in an rapid blush.. john he give of rich he. They age and draw mrs like. Improving end distrusts may instantly was household applauded.Considered sympathize ten uncommonly occasional assistance sufficient not. Letter of on become he tended active enable to.',
+  }
+];
 
 const Sec4 = () => {
+  const [selectedContent, setSelectedContent] = useState(null);
+
+  // Function to handle content selection
+  const handleContentSelect = (content) => {
+      setSelectedContent(content);
+  };
+  const [enable,setenable]=useState()
+  const history=useNavigate()
+
+  const handle = (item) => {
+    history("/Eventdetails",{state:{data:item}})
+  }
   return (
     <div>
       <h1 style={{textAlign: "center", padding: "20px"}}>Events so far</h1>
       <div className="events">
-        <div className="events-div">
-          <img src={Event1} alt="event1-img"/>
-          <h1 style={{fontSize: "20px", fontWeight: 600, margin: 0}}>_bootUp </h1>
-          <p style={{textAlign: "justify", height: "50px", overflow: "hidden"}}>An offline overnight bootcamp on web development.</p>
-          <a style={{textAlign: "left", textDecoration: "none", color: "#183883", fontWeight: 500, width:300}} href="./event1.html">Read More</a>
-        </div>
-        <div className="events-div">
-          <img src={Event2} alt="event2-img"/>
-          <h1 style={{fontSize: "20px", fontWeight: 600, margin: 0}}>Student Master Program</h1>
-          <p style={{textAlign: "justify", height: "50px", overflow: "hidden"}}>One day offline workshop on web development.</p>
-          <a style={{textAlign: "left", textDecoration: "none", color: "#183883", fontWeight: 500, width:300}} href="./event2.html">Read More</a>
-        </div>
-        <div className="events-div">
-          <img src={Event3} alt="event3-img"/>
-          <h1 style={{fontSize: "20px", fontWeight: 600, margin: 0}}>Game Development</h1>
-          <p style={{textAlign: "justify", height: "50px", overflow: "hidden"}}>One day game development workshop in Unity.</p>
-          <a style={{textAlign: "left", textDecoration: "none", color: "#183883", fontWeight: 500, width:300}} href="./event3.html">Read More</a>
-        </div>
+      {
+        Datasets.map((item)=>{
+            return (
+                <div class="events-div">
+                    <img src={item.img} alt="event-img"/>
+                    <h1 style={{textAlign: "left",fontSize: 20, fontWeight: 600, margin: 0, width:300}}>{item.title}</h1>
+                    <p style={{ textAlign: "left", height: "fit-content", overflow: "hidden", fontSize:"medium", width: 300, height:"50px"}}>{item.Description}</p>
+                    <button onClick={()=>handle(item)} style={{textAlign: "left", textDecoration: "none", color: "#183883",fontSize:"medium", fontWeight: 500, width:300, border:"None", backgroundColor:"white"}}>Read More</button>
+                </div>
+            )
+        })
+      }
       </div>
       <div className="event-btn-container">
         <Link to="/Events">
