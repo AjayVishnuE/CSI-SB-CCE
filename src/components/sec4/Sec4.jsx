@@ -1,26 +1,32 @@
 import React , {useState} from 'react'
 import { useNavigate } from 'react-router-dom';
 import './sec4.css';
-import Event1 from '../../assets/Events/Event1.png';
-import Event2 from '../../assets/Events/Event2.png';
-import Event3 from '../../assets/Events/Event3.png';
+import Event1 from '../../assets/Events/Posters/Event1.png';
+import Event2 from '../../assets/Events/Posters/Event2.png';
+import Event3 from '../../assets/Events/Posters/Event3.png';
+import Eventimg1 from '../../assets/Events/Images/Event1.jpg';
+import Eventimg2 from '../../assets/Events/Images/Event2.jpg';
+import Eventimg3 from '../../assets/Events/Images/Event3.jpg';
 import { Link } from 'react-router-dom';
 const Datasets = [
   {
     title: '_Boot Up',
-    img: Event1,
+    poster: Event1,
+    Eventimg:Eventimg1,
     Description:'An offline overnight bootcamp on web development.',
     text: 'From they fineReally boy law county she unable her sister. Feet you off its like like six. Considered sympathize ten uncommonly occasional assistance sufficient not. Letter of on become he tended active enable toAmong sex are leave law built now. In built table in an rapid blush.. john he give of rich he. They age and draw mrs like. Improving end distrusts may instantly was household applauded.Considered sympathize ten uncommonly occasional assistance sufficient not. Letter of on become he tended active enable to.',
   },
   {
     title: 'Student Master Program',
-    img: Event2,
+    poster: Event2,
+    Eventimg:Eventimg2,
     Description:'One day offline workshop on web development.',
     text: 'From they fineReally boy law county she unable her sister. Feet you off its like like six. Considered sympathize ten uncommonly occasional assistance sufficient not. Letter of on become he tended active enable toAmong sex are leave law built now. In built table in an rapid blush.. john he give of rich he. They age and draw mrs like. Improving end distrusts may instantly was household applauded.Considered sympathize ten uncommonly occasional assistance sufficient not. Letter of on become he tended active enable to.',
   },
   {
     title: 'Game Development',
-    img: Event3,
+    poster: Event3,
+    Eventimg:Eventimg3,
     Description:'One day game development workshop in Unity.',
     text: 'From they fineReally boy law county she unable her sister. Feet you off its like like six. Considered sympathize ten uncommonly occasional assistance sufficient not. Letter of on become he tended active enable toAmong sex are leave law built now. In built table in an rapid blush.. john he give of rich he. They age and draw mrs like. Improving end distrusts may instantly was household applauded.Considered sympathize ten uncommonly occasional assistance sufficient not. Letter of on become he tended active enable to.',
   }
@@ -43,7 +49,7 @@ const Sec4 = () => {
         Datasets.map((item)=>{
             return (
                 <div class="events-div">
-                    <img src={item.img} alt="event-img"/>
+                    <img src={item.poster} alt="event-img"/>
                     <h1 style={{textAlign: "left",fontSize: 20, fontWeight: 600, margin: 0, width:300}}>{item.title}</h1>
                     <p style={{ textAlign: "left", height: "fit-content", overflow: "hidden", fontSize:"medium", width: 300, height:"50px"}}>{item.Description}</p>
                     <button onClick={()=>handle(item)} style={{textAlign: "left", textDecoration: "none", color: "#183883",fontSize:"medium", fontWeight: 500, width:300, border:"None", backgroundColor:"white"}}>Read More</button>
