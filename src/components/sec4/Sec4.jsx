@@ -29,10 +29,6 @@ const Datasets = [
 const Sec4 = () => {
   const [selectedContent, setSelectedContent] = useState(null);
 
-  // Function to handle content selection
-  const handleContentSelect = (content) => {
-      setSelectedContent(content);
-  };
   const [enable,setenable]=useState()
   const history=useNavigate()
 

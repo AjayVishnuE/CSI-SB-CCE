@@ -24,7 +24,7 @@ const Sec2 = () => {
           <a href="https://cce.edu.in" target='_blank'>
             <img src={CCE} alt=""/>
           </a>
-          <a href="https://code.cce.edu.in" target='_blank'>
+          <a href="https://cce.edu.in/department/associations/1" target='_blank'>
             <img src={CODe} alt=""/>
           </a>
         </div>
