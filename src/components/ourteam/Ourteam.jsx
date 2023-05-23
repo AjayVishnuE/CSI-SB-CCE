@@ -20,6 +20,68 @@ import ContentMember1 from '../../assets/Team/Aastin Wilson.jpg';
 import ContentMember2 from '../../assets/Team/Anna Maria.jpg';
 import ContentMember3 from '../../assets/Team/Nikhit Kumar.jpg';
 
+const Faculty = [
+    {
+        img:Staff1,
+        name:'Remya K sasi',
+        position:'Faculty-in-charge'
+    },
+    {
+        img:'../../assets/Team/jasmine.jpg',
+        name:'Jasmine Jolly',
+        position:'Faculty-in-charge'
+    }
+]
+const Excom = [
+    {
+        img:'../../assets/Team/Krishnanand.jpg',
+        name:'Krishnanand U',
+        position:'President'
+    },
+    {
+        img:'../../assets/Team/paveena.jpg',
+        name:'Paveena Peter',
+        position:'Vice President'
+    },
+    {
+        img:'../../assets/Team/Amal C P.jpg',
+        name:'Amal C P',
+        position:'Secretary'
+    },
+    {
+        img:'../../assets/Team/Varsha Babu Akkara.jpg',
+        name:'Varsha Babu Akkara',
+        position:'Joint Secretary'
+    },    
+    {
+        img:'../../assets/Team/Neha.jpg',
+        name:'Neha Johnson',
+        position:'Treasurer'
+    }
+]
+const Techteam = [
+    {
+        img:'../../assets/Team/paveena.jpg',
+        name:'Ajay Vishnu E',
+        position:'Team Lead'
+    },
+    {
+        img:'../../assets/Team/Amal C P.jpg',
+        name:'Enric S Neelamkavil',
+        position:'Team Member'
+    },
+    {
+        img:'../../assets/Team/Varsha Babu Akkara.jpg',
+        name:'Roshan Paul',
+        position:'Team Member'
+    },    
+    {
+        img:'../../assets/Team/Neha.jpg',
+        name:'Navneeth K U',
+        position:'Team Member'
+    }
+]
+
 const Ourteam = () => {
   return (
     <div>
@@ -27,67 +89,45 @@ const Ourteam = () => {
         <h1>Our Team</h1>
         <h2>Executive Committee</h2>
         <div className="faculty-in-charge">
-            <div className="ex-com-member">
-                <img className="ex-com-member-img" src={Staff1} alt=""/>
-                <h3>Dr. Remya K Sasi</h3>
-                <p>Faculty-in-charge</p>
-            </div>
-            <div className="ex-com-member">
-                <img className="ex-com-member-img" src={Staff2} alt=""/>
-                <h3>Jasmine Jolly</h3>
-                <p>Faculty-in-charge</p>
-            </div>
+        {
+            Faculty.map((item) => {
+                return(
+                    <div className="ex-com-member">
+                        <img className="ex-com-member-img" src={item.img} alt=""/>
+                        <h3>{item.name}</h3>
+                        <p>{item.position}</p>
+                    </div>
+                )
+            })
+        }
         </div>
 
         <div className="ex-com">
-            <div className="ex-com-member">
-                <img className="ex-com-member-img" src={President} alt=""/>
-                <h3>Krishnanand U</h3>
-                <p>President</p>
-            </div>
-            <div className="ex-com-member">
-                <img className="ex-com-member-img" src={VicePresident} alt=""/>
-                <h3>Paveena Peter</h3>
-                <p>Vice President</p>
-            </div>
-            <div className="ex-com-member">
-                <img className="ex-com-member-img" src={Secretary} alt=""/>
-                <h3>Amal C P</h3>
-                <p>Secretary</p>
-            </div>
-            <div className="ex-com-member">
-                <img className="ex-com-member-img" src={JointSecretary} alt=""/>
-                <h3>Varsha Babu Akkara</h3>
-                <p>Joint Secretary</p>
-            </div>
-            <div className="ex-com-member">
-                <img className="ex-com-member-img" src={Treasurer} alt=""/>
-                <h3>Neha Johnson</h3>
-                <p>Treasurer</p>
-            </div>
+        {
+            Excom.map((item) => {
+                return(
+                    <div className="ex-com-member">
+                        <img className="ex-com-member-img" src={item.img} alt=""/>
+                        <h3>{item.name}</h3>
+                        <p>{item.position}</p>
+                    </div>
+                )
+            })
+        }
         </div>
         <h2>Technical Team</h2>
         <div className="technical-team">
-            <div className="team-member">
-                <img className="team-member-img" src={TecnicalLead} alt=""/>
-                <h3>Ajay Vishnu E</h3>
-                <p>Team Lead</p>
-            </div>
-            <div className="team-member">
-                <img className="team-member-img" src={TechnicalMemeber1} alt=""/>
-                <h3>Enric S Neelamkavil</h3>
-                <p>Team Member</p>
-            </div>
-            <div className="team-member">
-                <img className="team-member-img" src={TechnicalMemeber2} alt=""/>
-                <h3>Roshan Paul</h3>
-                <p>Team Member</p>
-            </div>
-            <div className="team-member">
-                <img className="team-member-img" src={TechnicalMemeber3} alt=""/>
-                <h3>Navneeth K U</h3>
-                <p>Team Member</p>
-            </div>
+        {
+            Techteam.map((item) => {
+                return(
+                    <div className="team-member">
+                        <img className="team-member-img" src={item.img} alt=""/>
+                        <h3>{item.name}</h3>
+                        <p>{item.position}</p>
+                    </div>
+                )
+            })
+        }
         </div>
         <h2>Creative Team</h2>
         <div className="technical-team">

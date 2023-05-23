@@ -1,4 +1,5 @@
 import React , {useState} from 'react'
+import { useNavigate } from 'react-router-dom';
 import './events.css';
 import Eventdetails from '../eventdetails/Eventdetails';
 import { Link } from 'react-router-dom';
@@ -19,42 +20,52 @@ const Events = () => {
     const handleContentSelect = (content) => {
         setSelectedContent(content);
     };
-
+    const [enable,setenable]=useState()
+    const history=useNavigate()
     const Datasets = [
         {
           title: '_Boot Up',
-          img: {Event1},
+          img: Event1,
           text: 'From they fineReally boy law county she unable her sister. Feet you off its like like six. Considered sympathize ten uncommonly occasional assistance sufficient not. Letter of on become he tended active enable toAmong sex are leave law built now. In built table in an rapid blush.. john he give of rich he. They age and draw mrs like. Improving end distrusts may instantly was household applauded.Considered sympathize ten uncommonly occasional assistance sufficient not. Letter of on become he tended active enable to.',
         },
         {
           title: '_Student Master Program',
-          img: {Event2},
+          img: Event2,
           text: 'From they fineReally boy law county she unable her sister. Feet you off its like like six. Considered sympathize ten uncommonly occasional assistance sufficient not. Letter of on become he tended active enable toAmong sex are leave law built now. In built table in an rapid blush.. john he give of rich he. They age and draw mrs like. Improving end distrusts may instantly was household applauded.Considered sympathize ten uncommonly occasional assistance sufficient not. Letter of on become he tended active enable to.',
         },
         {
           title: 'Game Development',
-          img: {Event3},
+          img: Event3,
           text: 'From they fineReally boy law county she unable her sister. Feet you off its like like six. Considered sympathize ten uncommonly occasional assistance sufficient not. Letter of on become he tended active enable toAmong sex are leave law built now. In built table in an rapid blush.. john he give of rich he. They age and draw mrs like. Improving end distrusts may instantly was household applauded.Considered sympathize ten uncommonly occasional assistance sufficient not. Letter of on become he tended active enable to.',
         },
         {
           title: 'Django Workshop',
-          img: {Event4},
-          text: 'From they fineReally boy law county she unable her sister. Feet you off its like like six. Considered sympathize ten uncommonly occasional assistance sufficient not. Letter of on become he tended active enable toAmong sex are leave law built now. In built table in an rapid blush.. john he give of rich he. They age and draw mrs like. Improving end distrusts may instantly was household applauded.Considered sympathize ten uncommonly occasional assistance sufficient not. Letter of on become he tended active enable to.',
+          img: Event4,
+          text: 'as household applauded.Considered sympathize ten uncommonly occasional assistance sufficient not. Letter of on become he tended active enable to.',
         }
       ];
       
-
+      const handle = (item) => {
+        history("/Eventdetails",{state:{data:item}})
+      }
   return (
     <div class="events-container">
         <h2>Events by CSI CCE</h2>
         <div class="events">
-            <div class="events-div">
-                <img src={Event1} alt="event-img"/>
-                <h1 style={{textAlign: "left",fontSize: 20, fontWeight: 600, margin: 0, width:300}}>_bootUp </h1>
-                <p style={{ textAlign: "left", height: "fit-content", overflow: "hidden", fontSize:"medium", width: 300}}> An offline overnight bootcamp on web development.</p>
-                <Link to="/Eventdetails"><Eventdetails dataset={selectedContent} /><button onClick={() => handleContentSelect(Datasets[0])} style={{textAlign: "left", textDecoration: "none", color: "#183883", fontWeight: 500, width:300}}>Read More</button></Link>
-            </div>
-            <div class="events-div">
+            {
+                Datasets.map((item)=>{
+                    return (
+                        <div class="events-div">
+                            <img src={item.img} alt="event-img"/>
+                            <h1 style={{textAlign: "left",fontSize: 20, fontWeight: 600, margin: 0, width:300}}>{item.title}</h1>
+                            <p style={{ textAlign: "left", height: "fit-content", overflow: "hidden", fontSize:"medium", width: 300, height:"50px"}}>{item.text}</p>
+                            <button onClick={()=>handle(item)} style={{textAlign: "left", textDecoration: "none", color: "#183883",fontSize:"medium", fontWeight: 500, width:300, border:"None", backgroundColor:"white"}}>Read More</button>
+                        </div>
+                    )
+                })
+            }
+
+            {/* <div class="events-div">
                 <img src={Event2} alt="event-img"/>
                 <h1 style={{textAlign: "left",fontSize: 20, fontWeight: 600, margin: 0, width:300}}>Student Master Program  </h1>
                 <p style={{ textAlign: "left", height: "fit-content", overflow: "hidden", fontSize:"medium", width: 300}}>One day offline workshop on web development.</p>
@@ -101,7 +112,7 @@ const Events = () => {
                 <h1 style={{textAlign: "left",fontSize: 20, fontWeight: 600, margin: 0, width:300}}>Code-a-thon</h1>
                 <p style={{ textAlign: "left", height: "fit-content", overflow: "hidden", fontSize:"medium", width: 300}}>A coding competition conducted in online platform.... </p>
                 <a style={{textAlign: "left", textDecoration: "none", color: "#183883", fontWeight: 500, width:300}} href="./event3.html">Read More</a>
-            </div>
+            </div> */}
         </div>
     </div>
   );

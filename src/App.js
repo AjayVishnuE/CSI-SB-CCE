@@ -30,7 +30,6 @@ const App = () => {
             <Route path="/Disclaimer" element={<Disclaimer />} />
             <Route path="/Eventdetails" element={<Eventdetails />} />
 
-
           </Routes>
     <Footer/>
     </BrowserRouter>

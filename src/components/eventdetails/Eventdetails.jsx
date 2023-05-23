@@ -1,14 +1,16 @@
 import React from 'react'
 import './eventdetails.css';
 import { Link } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 const Eventdetails = ({ dataset }) => {
+  const data=useLocation()
+  console.log(data)
   return (
     <div>
       <div className="Eventdetails">
-        <h1>{dataset.title}</h1>
-        <img src={dataset.img} alt="event-img"/>
-        <p>{dataset.text}</p>
+        <h1>{data.state.data.title}</h1>
+        <p>hi</p>
         <br/>
         <h2>other events</h2>
 
