@@ -1,7 +1,6 @@
 import React , {useState} from 'react'
 import { useNavigate } from 'react-router-dom';
 import './events.css';
-import Eventdetails from '../eventdetails/Eventdetails';
 import { Link } from 'react-router-dom';
 import Event1 from '../../assets/Events/Posters/Event1.jpg';
 import Event2 from '../../assets/Events/Posters/Event2.png';

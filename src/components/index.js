@@ -12,6 +12,10 @@ export { default as Events } from './events/Events';
 export { default as PrivacyPolicy} from './privacypolicy/PrivacyPolicy';
 export { default as Disclaimer } from './disclaimer/Disclaimer';
 export { default as Eventdetails } from './eventdetails/Eventdetails';
+export { default as Gototop } from './gototop/Gototop';
+export { default as Loader } from './loader/Loader';
+
+
 
 
 

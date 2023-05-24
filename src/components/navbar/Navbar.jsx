@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Link } from "react-router-dom";
 
-import { Home } from '../../containers';
+import { Gototop } from '../../components';
 
 import logodesk from '../../assets/CSI-CCE Logo Desktop.svg';
 import logomv from '../../assets/CSI-CCE Logo mobileview.svg';
@@ -33,6 +33,7 @@ function Navbar () {
             <Link to="/Gallery">Gallery</Link>
             <Link to="/History">History</Link>
         </div>
+        <Gototop/>
       </div>
   );
 }

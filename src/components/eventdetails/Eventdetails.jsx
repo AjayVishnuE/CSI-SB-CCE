@@ -18,7 +18,7 @@ const Eventdetails = ({ dataset }) => {
         <div className="event-btn-container">
         <Link to="/Events">
           <div className="event-btn">
-            <p>Go back to Events page</p>        
+            <p>Go to Events page</p>        
           </div>
         </Link>
       </div>

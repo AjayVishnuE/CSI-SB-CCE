@@ -8,7 +8,7 @@ import { BrowserRouter,
 
 
 import {Home } from './containers';
-import { Footer, Navbar, Upcomingevents, Ourteam , Gallery, History, Events , PrivacyPolicy, Disclaimer, Eventdetails } from './components';
+import { Footer, Navbar, Upcomingevents, Ourteam , Gallery, History, Events , PrivacyPolicy, Disclaimer, Eventdetails, Loader } from './components';
 
 import './App.css';
 
@@ -29,7 +29,6 @@ const App = () => {
             <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
             <Route path="/Disclaimer" element={<Disclaimer />} />
             <Route path="/Eventdetails" element={<Eventdetails />} />
-
           </Routes>
     <Footer/>
     </BrowserRouter>
