@@ -1,34 +1,37 @@
 import React , {useState} from 'react'
 import { useNavigate } from 'react-router-dom';
 import './sec4.css';
-import Event1 from '../../assets/Events/Posters/Event1.png';
-import Event2 from '../../assets/Events/Posters/Event2.png';
-import Event3 from '../../assets/Events/Posters/Event3.png';
-import Eventimg1 from '../../assets/Events/Images/Event1.jpg';
-import Eventimg2 from '../../assets/Events/Images/Event2.jpg';
-import Eventimg3 from '../../assets/Events/Images/Event3.jpg';
+import Event9 from '../../assets/Events/Posters/Event9.png';
+import Event8 from '../../assets/Events/Posters/Event8.png';
+import Event7 from '../../assets/Events/Posters/Event7.png';
+import Eventimg9 from '../../assets/Events/Images/Event9.jpg';
+import Eventimg8 from '../../assets/Events/Images/Event8.jpg';
+import Eventimg7 from '../../assets/Events/Images/Event7.jpg';
 import { Link } from 'react-router-dom';
 const Datasets = [
   {
-    title: '_Boot Up',
-    poster: Event1,
-    Eventimg:Eventimg1,
-    Description:'An offline overnight bootcamp on web development.',
-    text: 'From they fineReally boy law county she unable her sister. Feet you off its like like six. Considered sympathize ten uncommonly occasional assistance sufficient not. Letter of on become he tended active enable toAmong sex are leave law built now. In built table in an rapid blush.. john he give of rich he. They age and draw mrs like. Improving end distrusts may instantly was household applauded.Considered sympathize ten uncommonly occasional assistance sufficient not. Letter of on become he tended active enable to.',
+      title: 'Game Development',
+      poster: Event9,
+      Date:'01 April 2023',
+      Eventimg:Eventimg9,
+      Description:'One day game development workshop in Unity.',
+      text: 'The Computer Society Of India(CSI) of CCE and the Game Development Community of CCE jointly organized the workshop.The workshop was conducted by Mr. Elwin Jose, Technical Support Trainee at SOTI. A total of 35 participants attended the event.Registration fee was Rs.100 and certificates were provided to all the participants. Unity is a popular cross-platform game engine used to create 2D and 3D video games and other interactive content. It offers a range of tools and features for game development, including a powerful scripting language, a physics engine, asset management, and support for virtual reality and augmented reality. Unity is widely used in the gaming industry and has a large community of developers who share knowledge and resources.',
   },
   {
-    title: 'Student Master Program',
-    poster: Event2,
-    Eventimg:Eventimg2,
-    Description:'One day offline workshop on web development.',
-    text: 'From they fineReally boy law county she unable her sister. Feet you off its like like six. Considered sympathize ten uncommonly occasional assistance sufficient not. Letter of on become he tended active enable toAmong sex are leave law built now. In built table in an rapid blush.. john he give of rich he. They age and draw mrs like. Improving end distrusts may instantly was household applauded.Considered sympathize ten uncommonly occasional assistance sufficient not. Letter of on become he tended active enable to.',
+      title: '_Boot Up',
+      poster: Event8,
+      Date:'10th & 11th March 2023',
+      Eventimg:Eventimg8,
+      Description:' An offline overnight bootcamp on web development.',
+      text: 'CSI Student Chapter of Christ College Of Engineering,Irinjalakuda organized an offline overnight  bootcamp on web development.It was held on 10th and 11th of march 2023.The session started at 6:30 pm on 10th march and ended at 5:00 pm on 11th march 2023.A total of 30 students participated in the workshop.The session was led by Mr. Muhammad Sajad Front-end Development Head Tegain.The session was concluded with a valedictory ceremony.The ceremony was held in the presence of executive director Rev.Fr.John Palliakkara,faculty coordinator Ms.Jasmine Jolly ,resource person Mr.Muhammad Sajad and the Talrop team.The event aimed to enrich the technical knowledge of students in the field of Web Development.',
   },
   {
-    title: 'Game Development',
-    poster: Event3,
-    Eventimg:Eventimg3,
-    Description:'One day game development workshop in Unity.',
-    text: 'From they fineReally boy law county she unable her sister. Feet you off its like like six. Considered sympathize ten uncommonly occasional assistance sufficient not. Letter of on become he tended active enable toAmong sex are leave law built now. In built table in an rapid blush.. john he give of rich he. They age and draw mrs like. Improving end distrusts may instantly was household applauded.Considered sympathize ten uncommonly occasional assistance sufficient not. Letter of on become he tended active enable to.',
+      title: 'Student Master Program',
+      poster: Event7,
+      Date:'10th March 2023',
+      Eventimg:Eventimg7,
+      Description:'one day offline workshop on web development.',
+      text: 'CSI CCE Student Chapter of Christ College Engineering,Irinjalakuda organized  a one day offline workshop as part of student master program on basics of HTML, CSS and JAVASCRIPT for 2nd year computer science students of christ college of engineering.The session started at 9:00 am and ended at 3:00pm.A total of 35 students participated in the event.The session was led by Mr.Ajil Ibrahim & Mr.Adithyakrishnan final year S8 students of christ college of engineering.The event aimed to enrich the technical knowledge of students. ',
   }
 ];
 
