@@ -1,6 +1,6 @@
 import React from 'react'
 import './home.css';
-import { Footer, Navbar, Sec1, Sec2, Sec3, Sec4 } from '../../components' ;
+import {Sec1, Sec2, Sec3, Sec4 } from '../../components' ;
 
 function Home () {
   return (

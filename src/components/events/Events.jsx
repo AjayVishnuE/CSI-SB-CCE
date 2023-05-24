@@ -31,13 +31,15 @@ const Events = () => {
         {
             title: '_Boot Up',
             poster: Event1,
+            Date:'10th & 11th March 2023',
             Eventimg:Eventimg1,
             Description:' An offline overnight bootcamp on web development.',
-            text: 'From they fineReally boy law county she unable her sister. Feet you off its like like six. Considered sympathize ten uncommonly occasional assistance sufficient not. Letter of on become he tended active enable toAmong sex are leave law built now. In built table in an rapid blush.. john he give of rich he. They age and draw mrs like. Improving end distrusts may instantly was household applauded.Considered sympathize ten uncommonly occasional assistance sufficient not. Letter of on become he tended active enable to.',
+            text: 'CSI Student Chapter of Christ College Of Engineering,Irinjalakuda organized an offline overnight  bootcamp on web development.It was held on 10th and 11th of march 2023.The session started at 6:30 pm on 10th march and ended at 5:00 pm on 11th march 2023.A total of 30 students participated in the workshop.The session was led by Mr. Muhammad Sajad Front-end Development Head Tegain.The session was concluded with a valedictory ceremony.The ceremony was held in the presence of executive director Rev.Fr.John Palliakkara,faculty coordinator Ms.Jasmine Jolly ,resource person Mr.Muhammad Sajad and the Talrop team.The event aimed to enrich the technical knowledge of students in the field of Web Development.',
         },
         {
             title: 'Student Master Program',
             poster: Event2,
+            Date:'10th & 11th March 2023',
             Eventimg:Eventimg2,
             Description:'one day offline workshop on web development.',
             text: 'From they fineReally boy law county she unable her sister. Feet you off its like like six. Considered sympathize ten uncommonly occasional assistance sufficient not. Letter of on become he tended active enable toAmong sex are leave law built now. In built table in an rapid blush.. john he give of rich he. They age and draw mrs like. Improving end distrusts may instantly was household applauded.Considered sympathize ten uncommonly occasional assistance sufficient not. Letter of on become he tended active enable to.',
@@ -45,6 +47,7 @@ const Events = () => {
         {
             title: 'Game Development',
             poster: Event3,
+            Date:'10th & 11th March 2023',
             Eventimg:Eventimg3,
             Description:'One day game development workshop in Unity.',
             text: 'From they fineReally boy law county she unable her sister. Feet you off its like like six. Considered sympathize ten uncommonly occasional assistance sufficient not. Letter of on become he tended active enable toAmong sex are leave law built now. In built table in an rapid blush.. john he give of rich he. They age and draw mrs like. Improving end distrusts may instantly was household applauded.Considered sympathize ten uncommonly occasional assistance sufficient not. Letter of on become he tended active enable to.',
@@ -52,6 +55,7 @@ const Events = () => {
         {
             title: 'Django Workshop',
             poster: Event4,
+            Date:'10th & 11th March 2023',
             Eventimg:Eventimg4,
             Description:'One day workshop on Hands on training in Django Frame...',
             text: 'as household applauded.Considered sympathize ten uncommonly occasional assistance sufficient not. Letter of on become he tended active enable to.',
@@ -59,6 +63,7 @@ const Events = () => {
         {
             title: 'Laravel Workshop',
             poster: Event5,
+            Date:'10th & 11th March 2023',
             Eventimg:Eventimg5,
             Description:'One day workshop on Larvel Web application framework ',
             text: 'From they fineReally boy law county she unable her sister. Feet you off its like like six. Considered sympathize ten uncommonly occasional assistance sufficient not. Letter of on become he tended active enable toAmong sex are leave law built now. In built table in an rapid blush.. john he give of rich he. They age and draw mrs like. Improving end distrusts may instantly was household applauded.Considered sympathize ten uncommonly occasional assistance sufficient not. Letter of on become he tended active enable to.',
@@ -66,6 +71,7 @@ const Events = () => {
         {
             title: 'Ideathon',
             poster: Event6,
+            Date:'10th & 11th March 2023',
             Eventimg:Eventimg6,
             Description:'An idea pitching competition which was conducted in both ...',
             text: 'From they fineReally boy law county she unable her sister. Feet you off its like like six. Considered sympathize ten uncommonly occasional assistance sufficient not. Letter of on become he tended active enable toAmong sex are leave law built now. In built table in an rapid blush.. john he give of rich he. They age and draw mrs like. Improving end distrusts may instantly was household applauded.Considered sympathize ten uncommonly occasional assistance sufficient not. Letter of on become he tended active enable to.',
@@ -73,6 +79,7 @@ const Events = () => {
         {
             title: 'IoT Workshop',
             poster: Event7,
+            Date:'10th & 11th March 2023',
             Eventimg:Eventimg7,
             Description:'An offline workshop on Implementations of IOT and ..... ',
             text: 'From they fineReally boy law county she unable her sister. Feet you off its like like six. Considered sympathize ten uncommonly occasional assistance sufficient not. Letter of on become he tended active enable toAmong sex are leave law built now. In built table in an rapid blush.. john he give of rich he. They age and draw mrs like. Improving end distrusts may instantly was household applauded.Considered sympathize ten uncommonly occasional assistance sufficient not. Letter of on become he tended active enable to.',
@@ -80,6 +87,7 @@ const Events = () => {
         {
             title: 'IoT Project Expo',
             poster: Event8,
+            Date:'10th & 11th March 2023',
             Eventimg:Eventimg8,
             Description:'A project expo which unveiled the IOT projects created by.......',
             text: 'as household applauded.Considered sympathize ten uncommonly occasional assistance sufficient not. Letter of on become he tended active enable to.',
@@ -87,6 +95,7 @@ const Events = () => {
         {
             title: 'Code-a-thon',
             poster: Event9,
+            Date:'10th & 11th March 2023',
             Eventimg:Eventimg9,
             Description:'A coding competition conducted in online platform.... ',
             text: 'as household applauded.Considered sympathize ten uncommonly occasional assistance sufficient not. Letter of on become he tended active enable to.',

@@ -1,6 +1,6 @@
 import React from 'react'
 import './sec1.css';
-import Spotlight from '../../assets/Spotlight.svg';
+import Spotlight from '../../assets/Spotlight.JPG';
 import Crown from '../../assets/About-crown.svg';
 import Aim from '../../assets/About-aim.svg';
 import Rocket from '../../assets/About-rocket.svg';
@@ -11,6 +11,7 @@ const Sec1 = () => {
     <div>
       <div className="spotlight">
         <img className="spotlight-img" src={Spotlight}/>
+        <h1>Computer Society Of India<br/>CCE Student Branch</h1>
       </div>
       <h1 style={{textAlign: "center" , padding: "40px"}}>About CSI</h1>
       <div className="about-csi">

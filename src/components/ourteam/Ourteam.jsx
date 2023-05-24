@@ -1,7 +1,7 @@
 import React from 'react'
 import './ourteam.css';
-import Staff1 from '../../assets/Team/Remya.jpg';
-import Staff2 from '../../assets/Team/jasmine.jpg';
+import Staff1 from '../../assets/Team/Remya.png';
+import Staff2 from '../../assets/Team/Jasmine.png';
 import President from '../../assets/Team/Krishnanand.jpg';
 import VicePresident from '../../assets/Team/paveena.jpg';
 import Secretary from '../../assets/Team/Amal C P.jpg';

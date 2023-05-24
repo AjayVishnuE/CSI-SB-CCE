@@ -10,6 +10,7 @@ const Eventdetails = ({ dataset }) => {
     <div>
       <div className="Eventdetails">
         <h1>{data.state.data.title}</h1>
+        <p>{data.state.data.Date}</p>
         <img src={data.state.data.Eventimg} alt="event-img"/>
         <p>{data.state.data.text}</p>
         <br/>
