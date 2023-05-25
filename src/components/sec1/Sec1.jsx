@@ -11,7 +11,8 @@ const Sec1 = () => {
     <div>
       <div className="spotlight">
         <img className="spotlight-img" src={Spotlight}/>
-        <h1>Computer Society Of India<br/>CCE Student Branch</h1>
+        <h1 className="Desktopview">Computer Society of India<br/>CCE Student Branch</h1>
+        <h1 className="Mobileview">CSI<br/>CCE Student Branch</h1>
       </div>
       <h1 style={{textAlign: "center" , padding: "40px"}}>About CSI</h1>
       <div className="about-csi">

@@ -63,7 +63,7 @@ const Techteam = [
     {
         img:TecnicalLead,
         name:'Ajay Vishnu E',
-        position:'Team Lead'
+        position:'Tecnical Lead'
     },
     {
         img: TechnicalMemeber1,
@@ -85,7 +85,7 @@ const CreativeTeam = [
     {
         img:CreativeLead,
         name:'Surya Kiran P M',
-        position:'Team Lead'
+        position:'Creative Lead'
     },
     {
         img: CreativeMember1,
@@ -107,7 +107,7 @@ const ContentTeam = [
     {
         img:ContentLead,
         name:'Varsha Babu Akkara',
-        position:'Team Lead'
+        position:'Content Lead'
     },
     {
         img: ContentMember1,
