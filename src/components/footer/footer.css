@@ -35,6 +35,12 @@
     display: flex;
     gap:10px;
   }
+  
+  .Credits{
+    font-size: small;
+    text-align: center;
+    padding: 10px 0 20px 0;
+  }
 
 @media (max-width:900px){
     .footer{
