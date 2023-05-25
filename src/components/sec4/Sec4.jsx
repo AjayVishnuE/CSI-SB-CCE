@@ -53,9 +53,9 @@ const Sec4 = () => {
             return (
                 <div class="events-div">
                     <img src={item.poster} alt="event-img"/>
-                    <h1 style={{textAlign: "left",fontSize: 20, fontWeight: 600, margin: 0, width:300}}>{item.title}</h1>
-                    <p style={{ textAlign: "left", height: "fit-content", overflow: "hidden", fontSize:"medium", width: 300, height:"50px"}}>{item.Description}</p>
-                    <button onClick={()=>handle(item)} style={{textAlign: "left", textDecoration: "none", color: "#183883",fontSize:"medium", fontWeight: 500, width:300, border:"None", backgroundColor:"white", cursor:"pointer"}}>Read More</button>
+                    <h1 style={{textAlign: "left",fontSize: 20, fontWeight: 600, margin: 0, width:290}}>{item.title}</h1>
+                    <p style={{ textAlign: "left", height: "fit-content", overflow: "hidden", fontSize:"medium", width: 290, height:"50px"}}>{item.Description}</p>
+                    <button onClick={()=>handle(item)} style={{textAlign: "left", textDecoration: "none", color: "#183883",fontSize:"medium", fontWeight: 500, width:290, border:"None", backgroundColor:"white", cursor:"pointer"}}>Read More</button>
                 </div>
             )
         })
