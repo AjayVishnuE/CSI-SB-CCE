@@ -58,3 +58,13 @@
       width: 80%;
     }
 }
+
+@media (max-width:1200px) {
+  .supporting-organizations-logos > a > img{
+    height: 80px;
+    width: 80px;
+    object-fit: contain;
+  }
+
+}
+

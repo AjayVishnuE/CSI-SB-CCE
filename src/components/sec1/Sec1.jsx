@@ -19,17 +19,17 @@ const Sec1 = () => {
         <div className="about-csi-content">
             <img className="about-csi-content-img" src={Crown}/>
             <h1 className="about-csi-content-h1" >Value</h1>
-            <p className="about-csi-content-p" >one of the most valued professional bodies in the world</p>
+            <p className="about-csi-content-p" >one of the most valued professional bodies in the world.</p>
         </div>
         <div className="about-csi-content">
             <img className="about-csi-content-img" src={Aim}/>
             <h1 className="about-csi-content-h1" >Learn</h1>
-            <p className="about-csi-content-p" >one of the most valued professional bodies in the world</p>
+            <p className="about-csi-content-p" >Learn about technologies along with the Computer Society of India.</p>
         </div>
         <div className="about-csi-content">
             <img className="about-csi-content-img" src={Rocket}/>
             <h1 className="about-csi-content-h1" >Connect</h1>
-            <p className="about-csi-content-p" >one of the most valued professional bodies in the world</p>
+            <p className="about-csi-content-p" >Build and grow your connections around the globe with us.</p>
         </div>
       </div>
     </div>

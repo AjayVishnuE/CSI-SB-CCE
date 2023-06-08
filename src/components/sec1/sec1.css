@@ -45,7 +45,6 @@ h1 {
     justify-content: center;
     padding: 0 10% 100px 10%;
     gap: 10%;
-
   }
 
   .about-csi-content{
@@ -96,20 +95,28 @@ h1 {
 }
 
 @media (max-width:500px){
+  .about-csi{
+    gap:15px
+  }
+
+  .about-csi-content{
+    padding: 0;
+  }
+
   .about-csi-content-img{
     height: 80%;
   }
 
   .about-csi-content-h1{
-    margin: 0; 
-    font-size:medium;
+    margin: 5px; 
+    font-size:larger;
     line-height: 1;
   }
 
   .about-csi-content-p{
     text-align: center;
     padding:0px 25px;
-    font-size: large;
+    font-size: medium;
     line-height: 1.2;
   }
 }

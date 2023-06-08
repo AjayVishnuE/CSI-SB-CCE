@@ -129,8 +129,8 @@ const Ourteam = () => {
   return (
     <div>
         <div className="our-team">
-        <h1>Our Team</h1>
-        <h2>Executive Committee</h2>
+        <h1 style={{textAlign:"center"}}>Our Team</h1>
+        <h2 style={{textAlign:"center"}}>Executive Committee</h2>
         <div className="faculty-in-charge">
         {
             Faculty.map((item) => {

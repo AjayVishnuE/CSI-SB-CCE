@@ -20,3 +20,13 @@
     object-fit: cover;
     background-color: aliceblue;
 }
+
+@media (max-width:500px) {
+    .history-img{
+        height: 250px;
+    }
+
+    .history > p{
+        font-size: medium;
+    }
+}
