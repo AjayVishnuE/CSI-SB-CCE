@@ -21,8 +21,8 @@ const Gallery = () => {
           <img src={img3} alt="" />
           <img src={img4} alt="" />
           <img src={img5} alt="" />
-          <img src={img6} alt="" />
           <img src={img7} alt="" />
+          <img src={img6} alt="" />
           <img src={img8} alt="" />
         </div>
       </div>
