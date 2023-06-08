@@ -1,4 +1,11 @@
-.beachhack-title{
+  .beachhack{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .beachhack-title{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,43 +41,7 @@
   .beachhack-paragraphs > P {
     width: 50%;
   }
-
-  @keyframes scroll {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(calc(-250px * 8));
-    }
-  }
-  
-  .beachhack-slider-container{
-    width: 100%;
-    padding: 0 10% 50px 10%;
-  }
-
-  .beachhack-slider {
-    background: white;
-    height: 350px;
-    margin: auto;
-    overflow: hidden;
-    position: relative;
-  }
-  
-  .beachhack-slide-track {
-    -webkit-animation: scroll 15s linear infinite;
-            animation: scroll 15s linear infinite;
-    display: flex;
-    gap: 20px;
-    width: calc(250px * 14);
-  }
-  
-  .beachhack-slider-imgs{
-      height: 350px;
-      width:580px;
-      object-fit: cover ;
-  }
-  
+ 
   @media (max-width:1200px) {    
     .beachhack-paragraphs{
       display: flex;

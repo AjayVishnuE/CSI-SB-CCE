@@ -73,4 +73,16 @@
     .events-div{
       width: 80%;
     }
+
+    .reach-us-inside{
+      flex-direction: column;
+    }
+
+    .reach-us-left{
+      text-align: center;
+    }
+  
+    .reach-us-right{
+      text-align: center;
+    }
   }

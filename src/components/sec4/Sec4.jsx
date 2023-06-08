@@ -72,7 +72,7 @@ const Sec4 = () => {
         <h1 style={{textAlign: "center", margin: 0}}>Reach Us</h1>
         <div className="reach-us-inside">
           <div className="reach-us-left">
-            <h1 style={{fontSize:"x-large", fontWeight: 600, margin: 0}}>Faculty Coordinators:</h1>
+            <h1 class="coordinator-h1" style={{fontSize:"x-large", fontWeight: 600, margin: 0}}>Faculty Coordinators:</h1>
             <br/>
             <h3 style={{margin:0, fontSize: "medium", fontWeight: 500, lineHeight: 1}}>DR. Remya K Sasi</h3>
             <h4 style={{margin:0, fontSize: "medium", fontWeight: 400, lineHeight: 1}}>97320578370</h4>
@@ -81,7 +81,7 @@ const Sec4 = () => {
             <h4 style={{margin:0, fontSize: "medium", fontWeight: 400, lineHeight: 1}}>97320578370</h4>
           </div>
           <div className="reach-us-right">
-            <h1 style={{fontSize:"x-large", fontWeight: 600, margin: 0}}>Student Coordinators:</h1>
+            <h1 class="coordinator-h1" style={{fontSize:"x-large", fontWeight: 600, margin: 0}}>Student Coordinators:</h1>
             <br/>
             <h3 style={{margin:0, fontSize: "medium", fontWeight: 500, lineHeight: 1}}>Krishnanad U</h3>
             <h4 style={{margin:0, fontSize: "medium", fontWeight: 400, lineHeight: 1}}>97320578370</h4>

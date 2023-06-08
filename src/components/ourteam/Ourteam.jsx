@@ -63,7 +63,7 @@ const Techteam = [
     {
         img:TecnicalLead,
         name:'Ajay Vishnu E',
-        position:'Tecnical Lead'
+        position:'Technical Lead'
     },
     {
         img: TechnicalMemeber1,
@@ -77,7 +77,7 @@ const Techteam = [
     },    
     {
         img: TechnicalMemeber3,
-        name:'Navneeth K U',
+        name:'Navaneeth K U',
         position:'Team Member'
     }
 ]

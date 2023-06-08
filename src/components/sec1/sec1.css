@@ -20,7 +20,7 @@ h1 {
 
   .spotlight > h1 {
     position:absolute;
-    color: rgba(255, 255, 255, 0.404);
+    color: rgba(255 255 255 / 66%);
     font-size:6rem;
     font-weight: 600;
     text-align: center;
@@ -57,6 +57,22 @@ h1 {
     padding: 20px 0;
   }
 
+  .about-csi-content-img{
+    height: 100%;
+  }
+
+  .about-csi-content-h1{
+    margin: 0; 
+    line-height: 1;
+  }
+
+  .about-csi-content-p{
+      text-align: center;
+      padding:0px 25px;
+      font-size: large;
+      line-height: 1.2;
+  }
+
   @media (max-width:900px){
     .about-csi{
       width: 100%;
@@ -77,4 +93,23 @@ h1 {
     .Mobileview{
       display: block;
     }
+}
+
+@media (max-width:500px){
+  .about-csi-content-img{
+    height: 80%;
+  }
+
+  .about-csi-content-h1{
+    margin: 0; 
+    font-size:medium;
+    line-height: 1;
+  }
+
+  .about-csi-content-p{
+    text-align: center;
+    padding:0px 25px;
+    font-size: large;
+    line-height: 1.2;
+  }
 }

@@ -16,12 +16,12 @@ const Eventdetails = ({ dataset }) => {
         <br/>
 
         <div className="event-btn-container">
-        <Link to="/Events">
-          <div className="event-btn">
-            <p>Go to Events page</p>        
-          </div>
-        </Link>
-      </div>
+          <Link to="/Events">
+            <div className="event-btn">
+              <p>Go to Events page</p>        
+            </div>
+          </Link>
+        </div>
       </div>
     </div>
   )

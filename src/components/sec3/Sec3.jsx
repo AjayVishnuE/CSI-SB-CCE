@@ -7,6 +7,7 @@ import BH3 from '../../assets/BH53.JPG';
 import BH4 from '../../assets/BH54.JPG';
 import BH5 from '../../assets/BH55.JPG';
 import BH6 from '../../assets/BH56.jpg';
+import Rightslider from '../rightslider/Rightslider';
 
 
 
@@ -26,30 +27,7 @@ const Sec3 = () => {
           <p style={{textAlign: "justify", fontSize:"large"}}>Beach Hack is the flagship event hosted by  Community Of Developers(CODe), association of computer science  of Christ College Of Engineering, Irinjalakuda. The 5th edition of beach hack titled BEACH HACK 5 was held on 29th and 30th of December 2022. Beach hack is a 24 hour  beach hackathon, providing a platform for students to solve various problems faced by our society simultaneously improving their critical and creative thinking. Various students from all over India participated for the event. The theme of Beach Hack 5 was marine and fisheries development.</p>
           <p style={{textAlign: "justify", fontSize:"large"}}>There were around 1000+ registrations,among these individual registration 13 teams were selected for the final level. Students competed with each other and developed solutions to various emerging issues that this(marine and fisheries) sector was facing in our society. Team from CUSAT named BYTECODE consisting of 5 members emerged as winners oF BH5. Participants were made to choose problem statements of their own. The idea of providing signals and essential information to the fishermen when they are danger bagged the first prize. Prizes were distributed to all the winners.</p>
         </div>
-        <div className="beachhack-slider-container">
-          <div className="beachhack-slider">
-            <div className="beachhack-slide-track">
-                <div className="beachhack-slide">
-                    <img className="beachhack-slider-imgs" src={BH1} alt="" />
-                </div>
-                <div className="beachhack-slide">
-                    <img className="beachhack-slider-imgs" src={BH2} alt="" />
-                </div>
-                <div className="beachhack-slide">
-                    <img className="beachhack-slider-imgs" src={BH3} alt="" />
-                </div>
-                <div className="beachhack-slide">
-                    <img className="beachhack-slider-imgs" src={BH4} alt="" />
-                </div>
-                <div className="beachhack-slide">
-                    <img className="beachhack-slider-imgs" src={BH5} alt="" />
-                </div>
-                <div className="beachhack-slide">
-                    <img className="beachhack-slider-imgs" src={BH6} alt="" />
-                </div>
-            </div>
-          </div>
-        </div>
+        <Rightslider/>
       </div>
     </div>
   )

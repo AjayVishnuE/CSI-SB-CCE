@@ -28,7 +28,7 @@ function Navbar () {
           </label>
         </div>
         <div className="nav-links">
-            <Link to="/Upcomingevents">UPCOMING EVENTS</Link>
+            <Link to="/Upcomingevents">Upcoming Events</Link>
             <Link to="/Ourteam">Our Team</Link>
             <Link to="/Gallery">Gallery</Link>
             <Link to="/History">History</Link>

@@ -9,8 +9,8 @@ const Sec2 = () => {
   return (
     <div>
       <div className="our-journey">
-        <div className="our-journey-img">
-            <img style={{width: "95%", height:"350px", objectFit: "cover" }} src={ourjourney}/>
+        <div className="our-journey-img-container">
+            <img class="our-journey-img" src={ourjourney}/>
         </div>
         <div className="our-journey-description">
             <h1 style={{color:"#183883", margin:"0 0 20px 0", lineHeight: 1}}>Our Journey</h1>

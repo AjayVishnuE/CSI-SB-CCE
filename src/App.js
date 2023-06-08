@@ -1,21 +1,10 @@
 import React from 'react';
-import { BrowserRouter, 
-  Routes, 
-  Route, 
- } from "react-router-dom";
-
- import {useEffect} from 'react';
-
-
-import {Home } from './containers';
-import { Footer, Navbar, Upcomingevents, Ourteam , Gallery, History, Events , PrivacyPolicy, Disclaimer, Eventdetails, Loader } from './components';
-
 import './App.css';
+import { BrowserRouter, Routes, Route, } from "react-router-dom";
+import {Home } from './containers';
+import { Footer, Navbar, Upcomingevents, Ourteam , Gallery, History, Events , PrivacyPolicy, Disclaimer, Eventdetails} from './components';
 
 const App = () => {
-  useEffect(() => {
-    window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
-  }, []);
   return (
     <BrowserRouter>
     <Navbar/>
