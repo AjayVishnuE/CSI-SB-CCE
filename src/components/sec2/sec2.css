@@ -59,7 +59,7 @@
     }
 }
 
-@media (max-width:1200px) {
+@media (max-width:500px) {
   .supporting-organizations-logos > a > img{
     height: 80px;
     width: 80px;

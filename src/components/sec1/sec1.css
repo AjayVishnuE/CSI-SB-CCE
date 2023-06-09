@@ -101,6 +101,7 @@ h1 {
 
   .about-csi-content{
     padding: 0;
+    gap: 0;
   }
 
   .about-csi-content-img{
