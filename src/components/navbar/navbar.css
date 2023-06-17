@@ -115,7 +115,7 @@
     }
   
     .nav>.nav-links>a:hover {
-      color:#009743;
+      color: #ffffff;
     }
     
     .nav>#nav-check:not(:checked)~.nav-links {
